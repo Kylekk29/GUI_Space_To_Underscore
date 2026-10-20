@@ -1,3 +1,5 @@
+**English** | [简体中文](README.zh-CN.md)
+
 # GUI Space to Underscore
 
 A tiny window that turns text like `my file name: v2` into `my_file_name__v2`. Spaces and colons become underscores, and the result goes straight to your clipboard.
