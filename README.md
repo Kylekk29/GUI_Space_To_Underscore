@@ -1,40 +1,29 @@
-**README**
-==========
+# GUI Space to Underscore
 
-**GUI Space to Underscore Tool**
--------------------------------
+A tiny window that turns text like `my file name: v2` into `my_file_name__v2`. Spaces and colons become underscores, and the result goes straight to your clipboard.
 
-### Overview
+## Features
 
-This tool is a simple graphical user interface (GUI) application that replaces spaces and colons with underscores in a given text. It provides two input methods: direct clipboard copying and manual text entry.
+- Replaces **spaces** and **colons** with `_`
+- Two ways in: take the text already on your clipboard, or type it in
+- The result is copied to the clipboard, ready to paste
+- Fixed 500×500 window
 
-### Features
+## Usage
 
-*   Replaces spaces and colons with underscores
-*   Supports two input methods:
-    *   Clipboard copying: Copies the processed text directly from the clipboard
-    *   Manual text entry: Allows users to input text manually
-*   Copies the processed text to the clipboard for easy use
+1. Run the script.
+2. Click **Clipboard** to convert whatever you copied, or type text in the box and click **Submit**.
+3. Paste the result anywhere.
 
-### Requirements
+## Run from source
 
-*   Python 3.x
-*   `tkinter` library (comes pre-installed with Python)
-*   `pyperclip` library (install using `pip install pyperclip`)
+Python 3. Tkinter is included with Python; `pyperclip` is the only extra.
 
-### Usage
+```bash
+pip install -r requirements.txt
+python GUI_space_to_underscore.py
+```
 
-1.  Run the `GUI_space_to_underscore.py` script
-2.  Choose an input method:
-    *   Click the "Clipboard" button to copy the processed text from the clipboard
-    *   Enter text manually in the input field and click the "Submit" button
-3.  The processed text will be copied to the clipboard
+## License
 
-### Notes
-
-*   The tool does not support resizing the window
-*   The window size is fixed at 500x500 pixels
-
-### Installation
-
-No installation is required. Simply run the `GUI_space_to_underscore.py` script using Python. If you don't have the `pyperclip` library installed, install it using `pip install pyperclip`.
+MIT, see [LICENSE](LICENSE).
